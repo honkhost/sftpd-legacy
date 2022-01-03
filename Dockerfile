@@ -1,6 +1,6 @@
 FROM alpine:3.12
 
-LABEL maintainer="pers.edwin@gmail.com"
+LABEL maintainer="epers@honkhost.gg"
 
 USER root
 
@@ -17,8 +17,8 @@ RUN ssh-keygen -A
 COPY sshd_config /etc/ssh/sshd_config
 COPY entrypoint.sh /
 
-ENV SCP_USER=XN6y9wpUQ4DnJ7 \
-  SCP_PASSWORD=7JQCwKLWmqvMeHZr3yVb92djaxPWsq \
+ENV SCP_USER=username \
+  SCP_PASSWORD=password \
   UID=1000 \
   GID=1000
 
